@@ -1,5 +1,6 @@
-package com.demoinaction.springannotation.annotation;
+package com.demoinaction.springannotation.email.annotation;
 
+import com.demoinaction.springannotation.email.configuration.EmailConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -11,7 +12,7 @@ import java.lang.annotation.*;
 // Target 注解作用域 通过ElementType选定范围
 @Target(ElementType.TYPE)
 // 将指定的类注入到Ioc 三种注入方式，添加类直接注入，通过ImportBeanDefinitonRegistrar注入；通过ImportSelector注入
-@Import(EmailImportSelector.class)
+@Import(EmailConfiguration.class)
 public @interface EnableEmail {
 
 }

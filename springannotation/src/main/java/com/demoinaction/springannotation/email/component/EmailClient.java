@@ -1,8 +1,10 @@
-package com.demoinaction.springannotation.component;
+package com.demoinaction.springannotation.email.component;
 
-import com.demoinaction.springannotation.configuration.EmailConfiguration;
+import com.demoinaction.springannotation.email.configuration.EmailConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EmailClient {
 
     @Autowired

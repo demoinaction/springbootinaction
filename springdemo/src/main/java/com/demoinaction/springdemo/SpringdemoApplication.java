@@ -1,11 +1,9 @@
 package com.demoinaction.springdemo;
 
-import com.demoinaction.springannotation.annotation.EnableEmail;
-import com.demoinaction.springannotation.component.EmailClient;
-import com.demoinaction.springannotation.configuration.EmailConfiguration;
+import com.demoinaction.springannotation.email.annotation.EnableEmail;
+import com.demoinaction.springannotation.email.component.EmailClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 
 
 @SpringBootApplication
